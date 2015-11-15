@@ -14,6 +14,8 @@
 		1F20681A1BF6BF1B00D04326 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2068181BF6BF1B00D04326 /* MainInterface.storyboard */; };
 		1F20681E1BF6BF1B00D04326 /* Alarm Pad Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1F2068111BF6BF1B00D04326 /* Alarm Pad Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1F780A5B1BF7DF8200B382A8 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F780A5A1BF7DF8200B382A8 /* InfoViewController.swift */; };
+		1F780A631BF852A800B382A8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F780A621BF852A800B382A8 /* Utilities.swift */; };
+		1F780A651BF858F000B382A8 /* AlarmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F780A641BF858F000B382A8 /* AlarmController.swift */; };
 		1FB7A2211BF6BB410047E823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB7A2201BF6BB410047E823 /* AppDelegate.swift */; };
 		1FB7A2231BF6BB410047E823 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB7A2221BF6BB410047E823 /* ViewController.swift */; };
 		1FB7A2261BF6BB410047E823 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FB7A2241BF6BB410047E823 /* Main.storyboard */; };
@@ -120,6 +122,8 @@
 		1F2068191BF6BF1B00D04326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		1F20681B1BF6BF1B00D04326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F780A5A1BF7DF8200B382A8 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		1F780A621BF852A800B382A8 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		1F780A641BF858F000B382A8 /* AlarmController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmController.swift; sourceTree = "<group>"; };
 		1FB7A21D1BF6BB410047E823 /* Alarm Pad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alarm Pad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB7A2201BF6BB410047E823 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FB7A2221BF6BB410047E823 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +178,8 @@
 		1F2068151BF6BF1B00D04326 /* Alarm Pad Widget */ = {
 			isa = PBXGroup;
 			children = (
+				1F780A621BF852A800B382A8 /* Utilities.swift */,
+				1F780A641BF858F000B382A8 /* AlarmController.swift */,
 				1F780A5A1BF7DF8200B382A8 /* InfoViewController.swift */,
 				1F2068161BF6BF1B00D04326 /* TodayViewController.swift */,
 				1F2068181BF6BF1B00D04326 /* MainInterface.storyboard */,
@@ -378,6 +384,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F780A631BF852A800B382A8 /* Utilities.swift in Sources */,
+				1F780A651BF858F000B382A8 /* AlarmController.swift in Sources */,
 				1F780A5B1BF7DF8200B382A8 /* InfoViewController.swift in Sources */,
 				1F2068171BF6BF1B00D04326 /* TodayViewController.swift in Sources */,
 			);

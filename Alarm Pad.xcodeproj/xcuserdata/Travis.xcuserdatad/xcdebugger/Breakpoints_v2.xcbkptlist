@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Alarm Pad Widget/TodayViewController.swift"
-            timestampString = "469245834.595184"
+            filePath = "Alarm Pad Widget/AlarmController.swift"
+            timestampString = "469271274.589675"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "fetchRemoteStatus()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,29 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Alarm Pad Widget/TodayViewController.swift"
-            timestampString = "469245834.595184"
+            filePath = "Alarm Pad Widget/AlarmController.swift"
+            timestampString = "469271274.589675"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "createTimer()"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "fetchRemoteStatus()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Alarm Pad Widget/AlarmController.swift"
+            timestampString = "469271274.589675"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "beginArmCountdown()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

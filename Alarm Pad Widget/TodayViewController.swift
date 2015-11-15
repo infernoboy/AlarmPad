@@ -56,6 +56,12 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 	func widgetMarginInsetsForProposedMarginInsets(defaultMarginInsets: UIEdgeInsets) -> UIEdgeInsets {
 		return UIEdgeInsetsZero;
 	}
+	
+	override func viewDidAppear(animated: Bool) {
+		super.viewDidAppear(animated);
+		
+		self.alarmController.fetchRemoteStatus();
+	}
 
 	override func viewDidLoad() {
 		super.viewDidLoad();
@@ -124,6 +130,10 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 		if (isDisarmed != nil) {
 			self.alarmStatus.textColor = isDisarmed == true ? self.disarmButton.titleColorForState(.Normal) : self.armButton.titleColorForState(.Normal);
 		}
+		
+		if (status == "UNKNOWN") {
+			self.alarmStatus.textColor = UIColor.lightGrayColor();
+		}
 	}
 	
 	@IBAction func toggleMainView(sender: AnyObject) {
@@ -155,26 +165,18 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 	}
 	
 	@IBAction func performDisarm(sender: AnyObject) {
-		self.alarmController.disarmWithPasscode(self.passcode);
-		
 		if (self.passcode.characters.count > 0) {
-			self.updatePasscode("");
-			self.updateStatus("DISARMING...", isDisarmed: nil);
+			self.alarmController.disarmWithPasscode(self.passcode);
 			
-			_ = PreservedTimeout(2.0) {
-				self.updateStatus("DISARMED", isDisarmed: true);
-			}
+			self.updatePasscode("");
 		}
 	}
 	
-	@IBAction func performArm(sender: AnyObject) {
+	@IBAction func performArm(sender: AnyObject) {		
 		if (self.passcode.characters.count > 0) {
-			self.updatePasscode("");
-			self.updateStatus("ARMING...", isDisarmed: nil);
+			self.alarmController.armWithPasscode(self.passcode);
 			
-			_ = PreservedTimeout(2.0) {
-				self.updateStatus("ARMED", isDisarmed: false);
-			}
+			self.updatePasscode("");
 		}
 	}
 	
@@ -185,6 +187,10 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 			self.infoView.hidden = false;
 			self.infoView.alpha = 1;
 		}, completion: nil);
+	}
+	
+	@IBAction func refreshRemoteStatus(sender: AnyObject) {
+		self.alarmController.fetchRemoteStatus();
 	}
 	
 	@IBAction func dismissInfoView(sender: AnyObject) {
