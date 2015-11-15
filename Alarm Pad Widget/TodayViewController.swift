@@ -9,16 +9,6 @@
 import UIKit
 import NotificationCenter
 
-extension CALayer {
-	func borderUIColor() -> UIColor? {
-		return borderColor != nil ? UIColor(CGColor: borderColor!) : nil
-	}
-	
-	func setBorderUIColor(color: UIColor) {
-		borderColor = color.CGColor
-	}
-}
-
 class PadButton: UIButton {
 	var padValue: String = "";
 	
@@ -39,56 +29,6 @@ class PadButton: UIButton {
 	}
 }
 
-class PreservedTimeout: NSObject
-{
-	private var timer: NSTimer?
-	private var callback: (Void -> Void)?
-	private var delaySeconds: Double? = 0;
-	
-	init(_ delaySeconds: Double = 0, _ callback: Void -> Void) {
-		super.init()
-		
-		self.callback = callback
-		self.delaySeconds = delaySeconds;
-		
-		self.createTimer();
-	}
-	
-	private func createTimer() {
-		self.timer?.invalidate();
-		
-		self.timer = NSTimer.scheduledTimerWithTimeInterval(NSTimeInterval(self.delaySeconds!),
-			target: self,
-			selector: "invoke",
-			userInfo: nil,
-			repeats: false
-		)
-	}
-	
-	func setDelay(delaySeconds: Double) -> PreservedTimeout {
-		self.delaySeconds = delaySeconds;
-		
-		return self;
-	}
-	
-	func reset() -> PreservedTimeout {
-		self.createTimer();
-		
-		return self;
-	}
-	
-	func invoke() {
-		self.callback?();
-		
-		self.timer = nil
-	}
-	
-	func cancel() {
-		self.timer?.invalidate()
-		self.timer = nil
-	}
-}
-
 class TodayViewController: UIViewController, NCWidgetProviding {
 	@IBOutlet weak var toggleButton: UIButton!
 	@IBOutlet weak var alarmStatus: UILabel!
@@ -99,6 +39,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 	@IBOutlet weak var infoText: UITextView!
 	
 	@IBOutlet weak var armButton: UIButton!
+	
+	var alarmController: AlarmController!;
 
 	var isCollapsed = false;
 	var passcode = "";
@@ -118,6 +60,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 	override func viewDidLoad() {
 		super.viewDidLoad();
 		
+		self.alarmController = AlarmController(viewController: self);
+		
 		if (defaults.boolForKey("isCollapsed")) {
 			self.isCollapsed = true;
 			
@@ -129,7 +73,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 		self.emptyPasscodeTimeout = PreservedTimeout(0) {
 			self.updatePasscode("");
 			
-			self.emptyPasscodeTimeout?.setDelay(2.0);
+			self.emptyPasscodeTimeout?.setDelay(5.0);
 		}
 	}
 	
@@ -211,6 +155,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 	}
 	
 	@IBAction func performDisarm(sender: AnyObject) {
+		self.alarmController.disarmWithPasscode(self.passcode);
+		
 		if (self.passcode.characters.count > 0) {
 			self.updatePasscode("");
 			self.updateStatus("DISARMING...", isDisarmed: nil);
@@ -230,8 +176,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 				self.updateStatus("ARMED", isDisarmed: false);
 			}
 		}
-		
-		self.showInfo("@IBAction func dismissInfoView(sender: AnyObject) {\nsdfdsfds\nsdfsdfsdf\nsdfsdf\nsdfsdfd\nsdfsddf\nsdfsd");
 	}
 	
 	func showInfo(info: String) {

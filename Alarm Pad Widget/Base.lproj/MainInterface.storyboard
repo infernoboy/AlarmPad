@@ -110,16 +110,13 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="1lh-YU-iRe" userLabel="Numbers">
                                                         <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Buc-py-qcz" customClass="PadButton" customModule="Alarm_Pad_Widget">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Buc-py-qcz" customClass="PadButton" customModule="Alarm_Pad_Widget">
                                                                 <rect key="frame" x="0.0" y="0.0" width="97" height="50"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="0.11328125" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="8"/>
-                                                                <state key="normal" title="1">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </state>
+                                                                <state key="normal" title="1"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                                         <integer key="value" value="4"/>
@@ -136,11 +133,11 @@
                                                                     <action selector="padNumberPressed:" destination="M4Y-Lb-cyx" eventType="touchDown" id="V2A-KJ-Lkb"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIJ-aE-nB2" customClass="PadButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIJ-aE-nB2" customClass="PadButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
                                                                 <rect key="frame" x="101" y="0.0" width="98" height="50"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="0.11328125" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="8"/>
                                                                 <state key="normal" title="2">
@@ -162,11 +159,11 @@
                                                                     <action selector="padNumberPressed:" destination="M4Y-Lb-cyx" eventType="touchDown" id="b1M-GN-SV6"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t68-oI-mK3" customClass="PadButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t68-oI-mK3" customClass="PadButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
                                                                 <rect key="frame" x="203" y="0.0" width="97" height="50"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="0.11328125" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="8"/>
                                                                 <state key="normal" title="3">
@@ -233,11 +230,11 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="rxM-n2-1eK" userLabel="Numbers">
                                                         <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngl-eZ-tdU" customClass="PadButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngl-eZ-tdU" customClass="PadButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="97" height="50"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="0.11328125" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="8"/>
                                                                 <state key="normal" title="4">
@@ -259,11 +256,11 @@
                                                                     <action selector="padNumberPressed:" destination="M4Y-Lb-cyx" eventType="touchDown" id="fT5-i0-mQ7"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FA8-n6-PVG" customClass="PadButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FA8-n6-PVG" customClass="PadButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
                                                                 <rect key="frame" x="101" y="0.0" width="98" height="50"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="0.11328125" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="8"/>
                                                                 <state key="normal" title="5">
@@ -285,11 +282,11 @@
                                                                     <action selector="padNumberPressed:" destination="M4Y-Lb-cyx" eventType="touchDown" id="cku-dt-h3d"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Xg-FV-eph" customClass="PadButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Xg-FV-eph" customClass="PadButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
                                                                 <rect key="frame" x="203" y="0.0" width="97" height="50"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="0.11328125" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="8"/>
                                                                 <state key="normal" title="6">
@@ -356,11 +353,11 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="UDx-CC-41s" userLabel="Numbers">
                                                         <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuB-l9-71X" customClass="PadButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuB-l9-71X" customClass="PadButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="97" height="50"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="0.11328125" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="8"/>
                                                                 <state key="normal" title="7">
@@ -382,11 +379,11 @@
                                                                     <action selector="padNumberPressed:" destination="M4Y-Lb-cyx" eventType="touchDown" id="Nn4-vQ-opp"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmU-kZ-Zy7" customClass="PadButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmU-kZ-Zy7" customClass="PadButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
                                                                 <rect key="frame" x="101" y="0.0" width="98" height="50"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="0.11328125" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="8"/>
                                                                 <state key="normal" title="8">
@@ -408,11 +405,11 @@
                                                                     <action selector="padNumberPressed:" destination="M4Y-Lb-cyx" eventType="touchDown" id="8Cp-Ll-qbJ"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puL-IU-Rl4" customClass="PadButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puL-IU-Rl4" customClass="PadButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
                                                                 <rect key="frame" x="203" y="0.0" width="97" height="50"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="0.11328125" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="8"/>
                                                                 <state key="normal" title="9">
@@ -479,9 +476,10 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="DGd-Xe-uRd" userLabel="Numbers">
                                                         <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
                                                         <subviews>
-                                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTM-vC-qDz">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTM-vC-qDz">
                                                                 <rect key="frame" x="0.0" y="0.0" width="97" height="50"/>
                                                                 <animations/>
+                                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.01" colorSpace="calibratedRGB"/>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <state key="normal" title="Arm">
                                                                     <color key="titleColor" red="0.9859483242" green="0.0" blue="0.026950567960000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -495,11 +493,11 @@
                                                                     <action selector="performArm:" destination="M4Y-Lb-cyx" eventType="touchDown" id="6FZ-fe-BrS"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Trm-no-Xw0" customClass="PadButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Trm-no-Xw0" customClass="PadButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
                                                                 <rect key="frame" x="101" y="0.0" width="98" height="50"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="0.11328125" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <state key="normal" title="0">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -555,13 +553,13 @@
                                 </constraints>
                             </stackView>
                             <visualEffectView hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xJt-RI-2hQ">
-                                <rect key="frame" x="16" y="0.0" width="288" height="370"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="370"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="QIK-GD-ptQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="288" height="370"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="370"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" editable="NO" text="Invalid passcode." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pnK-QG-cjh">
-                                            <rect key="frame" x="19" y="149" width="250" height="33"/>
+                                            <rect key="frame" x="35" y="149" width="250" height="33"/>
                                             <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="250" id="a8J-TD-A8G"/>
@@ -571,11 +569,9 @@
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7w-xe-CzS">
-                                            <rect key="frame" x="129" y="190" width="30" height="30"/>
+                                            <rect key="frame" x="145" y="190" width="30" height="30"/>
                                             <animations/>
-                                            <state key="normal" title="OK">
-                                                <color key="titleColor" red="0.43155109882354736" green="0.67644381523132324" blue="0.99882781505584717" alpha="1" colorSpace="calibratedRGB"/>
-                                            </state>
+                                            <state key="normal" title="OK"/>
                                             <connections>
                                                 <action selector="dismissInfoView:" destination="M4Y-Lb-cyx" eventType="touchUpOutside" id="elA-5V-J6k"/>
                                                 <action selector="dismissInfoView:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="oLa-Lr-HPZ"/>
@@ -607,8 +603,8 @@
                             <constraint firstItem="xJt-RI-2hQ" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" id="ehT-pp-jhS"/>
                             <constraint firstItem="QXo-2z-FDd" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" id="fLb-WU-zek"/>
                             <constraint firstItem="QXo-2z-FDd" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="jHx-Tn-ann"/>
-                            <constraint firstItem="xJt-RI-2hQ" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="jM2-Jh-aXv"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="xJt-RI-2hQ" secondAttribute="trailing" id="m79-I8-a3T"/>
+                            <constraint firstItem="xJt-RI-2hQ" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="jM2-Jh-aXv"/>
+                            <constraint firstAttribute="trailing" secondItem="xJt-RI-2hQ" secondAttribute="trailing" id="m79-I8-a3T"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QXo-2z-FDd" secondAttribute="trailing" id="mRd-jf-5yV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OJG-tA-jqe" secondAttribute="trailing" priority="750" id="mWm-Ad-0pF"/>
                             <constraint firstItem="xJt-RI-2hQ" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="mqe-wG-gKN"/>
