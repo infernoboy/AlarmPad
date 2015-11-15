@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F2068081BF6BDD200D04326 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2067FB1BF6BD6000D04326 /* Alamofire.framework */; };
+		1F2068091BF6BDD200D04326 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2067FB1BF6BD6000D04326 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F2068141BF6BF1B00D04326 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2068131BF6BF1B00D04326 /* NotificationCenter.framework */; };
+		1F2068171BF6BF1B00D04326 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2068161BF6BF1B00D04326 /* TodayViewController.swift */; };
+		1F20681A1BF6BF1B00D04326 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2068181BF6BF1B00D04326 /* MainInterface.storyboard */; };
+		1F20681E1BF6BF1B00D04326 /* Alarm Pad Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1F2068111BF6BF1B00D04326 /* Alarm Pad Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1F780A5B1BF7DF8200B382A8 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F780A5A1BF7DF8200B382A8 /* InfoViewController.swift */; };
 		1FB7A2211BF6BB410047E823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB7A2201BF6BB410047E823 /* AppDelegate.swift */; };
 		1FB7A2231BF6BB410047E823 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB7A2221BF6BB410047E823 /* ViewController.swift */; };
 		1FB7A2261BF6BB410047E823 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FB7A2241BF6BB410047E823 /* Main.storyboard */; };
@@ -14,7 +21,105 @@
 		1FB7A22B1BF6BB410047E823 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FB7A2291BF6BB410047E823 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1F2067FA1BF6BD6000D04326 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F2067F01BF6BD6000D04326 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		1F2067FC1BF6BD6000D04326 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F2067F01BF6BD6000D04326 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		1F2067FE1BF6BD6000D04326 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F2067F01BF6BD6000D04326 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		1F2068001BF6BD6000D04326 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F2067F01BF6BD6000D04326 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		1F2068021BF6BD6000D04326 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F2067F01BF6BD6000D04326 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		1F2068041BF6BD6000D04326 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F2067F01BF6BD6000D04326 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		1F2068061BF6BD6000D04326 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F2067F01BF6BD6000D04326 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		1F20680A1BF6BDD200D04326 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F2067F01BF6BD6000D04326 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		1F20681C1BF6BF1B00D04326 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FB7A2151BF6BB410047E823 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F2068101BF6BF1B00D04326;
+			remoteInfo = "Alarm Pad Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F20680C1BF6BDD200D04326 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1F2068091BF6BDD200D04326 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F2068221BF6BF1B00D04326 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1F20681E1BF6BF1B00D04326 /* Alarm Pad Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1F2067F01BF6BD6000D04326 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		1F2068111BF6BF1B00D04326 /* Alarm Pad Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Alarm Pad Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F2068131BF6BF1B00D04326 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		1F2068161BF6BF1B00D04326 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		1F2068191BF6BF1B00D04326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		1F20681B1BF6BF1B00D04326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F780A5A1BF7DF8200B382A8 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		1FB7A21D1BF6BB410047E823 /* Alarm Pad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alarm Pad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB7A2201BF6BB410047E823 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FB7A2221BF6BB410047E823 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,21 +130,66 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1F20680E1BF6BF1B00D04326 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F2068141BF6BF1B00D04326 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FB7A21A1BF6BB410047E823 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F2068081BF6BDD200D04326 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F2067F11BF6BD6000D04326 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F2067FB1BF6BD6000D04326 /* Alamofire.framework */,
+				1F2067FD1BF6BD6000D04326 /* Alamofire iOS Tests.xctest */,
+				1F2067FF1BF6BD6000D04326 /* Alamofire.framework */,
+				1F2068011BF6BD6000D04326 /* Alamofire OSX Tests.xctest */,
+				1F2068031BF6BD6000D04326 /* Alamofire.framework */,
+				1F2068051BF6BD6000D04326 /* Alamofire tvOS Tests.xctest */,
+				1F2068071BF6BD6000D04326 /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F2068121BF6BF1B00D04326 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F2068131BF6BF1B00D04326 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F2068151BF6BF1B00D04326 /* Alarm Pad Widget */ = {
+			isa = PBXGroup;
+			children = (
+				1F780A5A1BF7DF8200B382A8 /* InfoViewController.swift */,
+				1F2068161BF6BF1B00D04326 /* TodayViewController.swift */,
+				1F2068181BF6BF1B00D04326 /* MainInterface.storyboard */,
+				1F20681B1BF6BF1B00D04326 /* Info.plist */,
+			);
+			path = "Alarm Pad Widget";
+			sourceTree = "<group>";
+		};
 		1FB7A2141BF6BB410047E823 = {
 			isa = PBXGroup;
 			children = (
 				1FB7A21F1BF6BB410047E823 /* Alarm Pad */,
+				1F2068151BF6BF1B00D04326 /* Alarm Pad Widget */,
+				1F2068121BF6BF1B00D04326 /* Frameworks */,
 				1FB7A21E1BF6BB410047E823 /* Products */,
+				1F2067F01BF6BD6000D04326 /* Alamofire.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				1FB7A21D1BF6BB410047E823 /* Alarm Pad.app */,
+				1F2068111BF6BF1B00D04326 /* Alarm Pad Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +218,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1F2068101BF6BF1B00D04326 /* Alarm Pad Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F20681F1BF6BF1B00D04326 /* Build configuration list for PBXNativeTarget "Alarm Pad Widget" */;
+			buildPhases = (
+				1F20680D1BF6BF1B00D04326 /* Sources */,
+				1F20680E1BF6BF1B00D04326 /* Frameworks */,
+				1F20680F1BF6BF1B00D04326 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Alarm Pad Widget";
+			productName = "Alarm Pad Widget";
+			productReference = 1F2068111BF6BF1B00D04326 /* Alarm Pad Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		1FB7A21C1BF6BB410047E823 /* Alarm Pad */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FB7A22F1BF6BB410047E823 /* Build configuration list for PBXNativeTarget "Alarm Pad" */;
@@ -74,10 +242,14 @@
 				1FB7A2191BF6BB410047E823 /* Sources */,
 				1FB7A21A1BF6BB410047E823 /* Frameworks */,
 				1FB7A21B1BF6BB410047E823 /* Resources */,
+				1F20680C1BF6BDD200D04326 /* Embed Frameworks */,
+				1F2068221BF6BF1B00D04326 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1F20680B1BF6BDD200D04326 /* PBXTargetDependency */,
+				1F20681D1BF6BF1B00D04326 /* PBXTargetDependency */,
 			);
 			name = "Alarm Pad";
 			productName = "Alarm Pad";
@@ -93,6 +265,10 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Travis Roman";
 				TargetAttributes = {
+					1F2068101BF6BF1B00D04326 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = M3M7AG8722;
+					};
 					1FB7A21C1BF6BB410047E823 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = M3M7AG8722;
@@ -110,14 +286,81 @@
 			mainGroup = 1FB7A2141BF6BB410047E823;
 			productRefGroup = 1FB7A21E1BF6BB410047E823 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1F2067F11BF6BD6000D04326 /* Products */;
+					ProjectRef = 1F2067F01BF6BD6000D04326 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1FB7A21C1BF6BB410047E823 /* Alarm Pad */,
+				1F2068101BF6BF1B00D04326 /* Alarm Pad Widget */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		1F2067FB1BF6BD6000D04326 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 1F2067FA1BF6BD6000D04326 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F2067FD1BF6BD6000D04326 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 1F2067FC1BF6BD6000D04326 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F2067FF1BF6BD6000D04326 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 1F2067FE1BF6BD6000D04326 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F2068011BF6BD6000D04326 /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = 1F2068001BF6BD6000D04326 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F2068031BF6BD6000D04326 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 1F2068021BF6BD6000D04326 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F2068051BF6BD6000D04326 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 1F2068041BF6BD6000D04326 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F2068071BF6BD6000D04326 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 1F2068061BF6BD6000D04326 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
+		1F20680F1BF6BF1B00D04326 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F20681A1BF6BF1B00D04326 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FB7A21B1BF6BB410047E823 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,6 +374,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1F20680D1BF6BF1B00D04326 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F780A5B1BF7DF8200B382A8 /* InfoViewController.swift in Sources */,
+				1F2068171BF6BF1B00D04326 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FB7A2191BF6BB410047E823 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -142,7 +394,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1F20680B1BF6BDD200D04326 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 1F20680A1BF6BDD200D04326 /* PBXContainerItemProxy */;
+		};
+		1F20681D1BF6BF1B00D04326 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F2068101BF6BF1B00D04326 /* Alarm Pad Widget */;
+			targetProxy = 1F20681C1BF6BF1B00D04326 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		1F2068181BF6BF1B00D04326 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F2068191BF6BF1B00D04326 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		1FB7A2241BF6BB410047E823 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -162,6 +435,28 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1F2068201BF6BF1B00D04326 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Alarm Pad Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.toggleable.Alarm-Pad.Alarm-Pad-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1F2068211BF6BF1B00D04326 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Alarm Pad Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.toggleable.Alarm-Pad.Alarm-Pad-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		1FB7A22D1BF6BB410047E823 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -249,7 +544,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Alarm Pad/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.toggleable.Alarm-Pad";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -260,7 +557,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Alarm Pad/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.toggleable.Alarm-Pad";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -270,6 +569,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1F20681F1BF6BF1B00D04326 /* Build configuration list for PBXNativeTarget "Alarm Pad Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F2068201BF6BF1B00D04326 /* Debug */,
+				1F2068211BF6BF1B00D04326 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1FB7A2181BF6BB410047E823 /* Build configuration list for PBXProject "Alarm Pad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -286,6 +594,7 @@
 				1FB7A2311BF6BB410047E823 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
