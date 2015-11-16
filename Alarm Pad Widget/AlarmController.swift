@@ -12,7 +12,7 @@ import Alamofire
 
 extension NSURLRequest {
 	class func allowsAnyHTTPSCertificateForHost(host: String) -> Bool {
-		return true;
+		return host == "lion.toggleable.com:161";
 	}
 }
 
@@ -20,12 +20,12 @@ public class AlarmController {
 	let alarmBaseURL = "https://lion.toggleable.com:161/alarm/";
 	
 	let knownCameras: [String:String] = [
-		"5": "Living Room",
-		"6": "Kitchen",
-		"7": "Bedroom",
-		"14": "Facetime",
-		"13": "Intruder Detection",
-		"15": "Siren Detection"
+		"5": "camera.living room".localized,
+		"6": "camera.kitchen".localized,
+		"7": "camera.bedroom".localized,
+		"14": "camera.facetime".localized,
+		"13": "camera.intruder detection".localized,
+		"15": "camera.siren detection".localized
 	]
 	
 	var viewController: TodayViewController;
@@ -108,7 +108,7 @@ public class AlarmController {
 			.responseString { response in
 				if (response.result.error != nil) {
 					self.viewController.updateStatus("unknown".localized, isDisarmed: true);
-					self.viewController.showInfo("Error: \(response.result.error!)");
+					self.viewController.showInfo(String(response.result.error!));
 				} else {
 					switch response.result.value! {
 						case "2":
@@ -122,7 +122,7 @@ public class AlarmController {
 						default:
 							self.fetchRemoteStatus();
 							
-							self.viewController.showInfo("Invalid passcode.");
+							self.viewController.showInfo("invalid passcode".localized);
 					}
 				}
 			}
@@ -138,7 +138,7 @@ public class AlarmController {
 			.responseString { response in
 				if (response.result.error != nil) {
 					self.viewController.updateStatus("unknown".localized, isDisarmed: true);
-					self.viewController.showInfo("Error: \(response.result.error!)");
+					self.viewController.showInfo(String(response.result.error!));
 				} else {
 					self.fetchRemoteStatus();
 					

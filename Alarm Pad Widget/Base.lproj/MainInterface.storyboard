@@ -30,10 +30,10 @@
                                     <action selector="toggleMainView:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="Rxw-nE-TlY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHECKING..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXo-2z-FDd">
-                                <rect key="frame" x="16" y="8" width="288" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="checking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXo-2z-FDd" customClass="LocalizableUILabel" customModule="Alarm_Pad_Widget" customModuleProvider="target">
+                                <rect key="frame" x="16" y="8" width="288" height="21"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.0" alpha="0.59999999999999998" colorSpace="calibratedWhite"/>
@@ -62,13 +62,13 @@
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHd-5i-xfP">
+                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHd-5i-xfP" customClass="LocalizableUIButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
                                                 <rect key="frame" x="173" y="0.0" width="87" height="32"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <inset key="contentEdgeInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
                                                 <size key="titleShadowOffset" width="0.0" height="1"/>
-                                                <state key="normal" title="Disarm">
+                                                <state key="normal" title="disarm">
                                                     <color key="titleColor" red="0.0021097413136497976" green="0.91130153795811519" blue="0.008689801060990883" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.0" alpha="0.59999999999999998" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -467,13 +467,14 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="DGd-Xe-uRd" userLabel="Numbers">
                                                         <rect key="frame" x="0.0" y="0.0" width="260" height="40"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTM-vC-qDz">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTM-vC-qDz" customClass="LocalizableUIButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="85" height="40"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.01" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <size key="titleShadowOffset" width="0.0" height="1"/>
-                                                                <state key="normal" title="Arm">
+                                                                <state key="normal" title="arm">
                                                                     <color key="titleColor" red="0.98665446043014526" green="0.14650186896324158" blue="0.21531558036804199" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <color key="titleShadowColor" white="0.0" alpha="0.59999999999999998" colorSpace="calibratedWhite"/>
                                                                 </state>
@@ -511,14 +512,14 @@
                                                                     <action selector="padNumberPressed:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="7VV-bv-bwh"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iui-LE-ept">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iui-LE-ept" customClass="LocalizableUIButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
                                                                 <rect key="frame" x="175" y="0.0" width="85" height="40"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.01" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <size key="titleShadowOffset" width="0.0" height="1"/>
-                                                                <state key="normal" title="Delete">
+                                                                <state key="normal" title="delete">
                                                                     <color key="titleShadowColor" white="0.0" alpha="0.59999999999999998" colorSpace="calibratedWhite"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
@@ -565,15 +566,15 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
-                                        <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7w-xe-CzS">
+                                        <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7w-xe-CzS" customClass="LocalizableUIButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
                                             <rect key="frame" x="135" y="166" width="50" height="40"/>
                                             <animations/>
-                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.01" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.01" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="5eQ-1x-r6O"/>
                                                 <constraint firstAttribute="width" constant="50" id="AkL-KX-41n"/>
                                             </constraints>
-                                            <state key="normal" title="OK">
+                                            <state key="normal" title="ok">
                                                 <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.4736812943" colorSpace="calibratedRGB"/>
                                             </state>

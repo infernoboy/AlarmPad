@@ -12,11 +12,11 @@
 		1F2068141BF6BF1B00D04326 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2068131BF6BF1B00D04326 /* NotificationCenter.framework */; };
 		1F2068171BF6BF1B00D04326 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2068161BF6BF1B00D04326 /* TodayViewController.swift */; };
 		1F20681E1BF6BF1B00D04326 /* Alarm Pad Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1F2068111BF6BF1B00D04326 /* Alarm Pad Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		1F780A5B1BF7DF8200B382A8 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F780A5A1BF7DF8200B382A8 /* InfoViewController.swift */; };
+		1F59C54F1BF9D8B900D631A9 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F59C54A1BF9D8B900D631A9 /* MainInterface.storyboard */; };
+		1F59C5501BF9D8B900D631A9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F59C54D1BF9D8B900D631A9 /* Localizable.strings */; };
+		1F59C5521BF9DD4200D631A9 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F59C5511BF9DD4200D631A9 /* Localizable.swift */; };
 		1F780A631BF852A800B382A8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F780A621BF852A800B382A8 /* Utilities.swift */; };
 		1F780A651BF858F000B382A8 /* AlarmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F780A641BF858F000B382A8 /* AlarmController.swift */; };
-		1F8646F61BF959B60004A8D4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F8646F51BF959B60004A8D4 /* Localizable.strings */; };
-		1F8646F81BF95A2D0004A8D4 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F8646F71BF95A2D0004A8D4 /* MainInterface.storyboard */; };
 		1FB7A2211BF6BB410047E823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB7A2201BF6BB410047E823 /* AppDelegate.swift */; };
 		1FB7A2231BF6BB410047E823 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB7A2221BF6BB410047E823 /* ViewController.swift */; };
 		1FB7A2261BF6BB410047E823 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FB7A2241BF6BB410047E823 /* Main.storyboard */; };
@@ -121,11 +121,11 @@
 		1F2068131BF6BF1B00D04326 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		1F2068161BF6BF1B00D04326 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		1F20681B1BF6BF1B00D04326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1F780A5A1BF7DF8200B382A8 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		1F59C54B1BF9D8B900D631A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		1F59C54E1BF9D8B900D631A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
+		1F59C5511BF9DD4200D631A9 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		1F780A621BF852A800B382A8 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		1F780A641BF858F000B382A8 /* AlarmController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmController.swift; sourceTree = "<group>"; };
-		1F8646F51BF959B60004A8D4 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		1F8646F71BF95A2D0004A8D4 /* MainInterface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		1FB7A21D1BF6BB410047E823 /* Alarm Pad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alarm Pad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB7A2201BF6BB410047E823 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FB7A2221BF6BB410047E823 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -180,23 +180,31 @@
 		1F2068151BF6BF1B00D04326 /* Alarm Pad Widget */ = {
 			isa = PBXGroup;
 			children = (
-				1F8646F41BF959A30004A8D4 /* Base.lproj */,
+				1F59C5491BF9D8B900D631A9 /* Base.lproj */,
+				1F59C54C1BF9D8B900D631A9 /* en.lproj */,
 				1F780A621BF852A800B382A8 /* Utilities.swift */,
+				1F59C5511BF9DD4200D631A9 /* Localizable.swift */,
 				1F780A641BF858F000B382A8 /* AlarmController.swift */,
-				1F780A5A1BF7DF8200B382A8 /* InfoViewController.swift */,
 				1F2068161BF6BF1B00D04326 /* TodayViewController.swift */,
-				1F8646F71BF95A2D0004A8D4 /* MainInterface.storyboard */,
 				1F20681B1BF6BF1B00D04326 /* Info.plist */,
 			);
 			path = "Alarm Pad Widget";
 			sourceTree = "<group>";
 		};
-		1F8646F41BF959A30004A8D4 /* Base.lproj */ = {
+		1F59C5491BF9D8B900D631A9 /* Base.lproj */ = {
 			isa = PBXGroup;
 			children = (
-				1F8646F51BF959B60004A8D4 /* Localizable.strings */,
+				1F59C54A1BF9D8B900D631A9 /* MainInterface.storyboard */,
 			);
-			name = Base.lproj;
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		1F59C54C1BF9D8B900D631A9 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				1F59C54D1BF9D8B900D631A9 /* Localizable.strings */,
+			);
+			path = en.lproj;
 			sourceTree = "<group>";
 		};
 		1FB7A2141BF6BB410047E823 = {
@@ -374,8 +382,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F8646F81BF95A2D0004A8D4 /* MainInterface.storyboard in Resources */,
-				1F8646F61BF959B60004A8D4 /* Localizable.strings in Resources */,
+				1F59C54F1BF9D8B900D631A9 /* MainInterface.storyboard in Resources */,
+				1F59C5501BF9D8B900D631A9 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,7 +406,7 @@
 			files = (
 				1F780A631BF852A800B382A8 /* Utilities.swift in Sources */,
 				1F780A651BF858F000B382A8 /* AlarmController.swift in Sources */,
-				1F780A5B1BF7DF8200B382A8 /* InfoViewController.swift in Sources */,
+				1F59C5521BF9DD4200D631A9 /* Localizable.swift in Sources */,
 				1F2068171BF6BF1B00D04326 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +436,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		1F59C54A1BF9D8B900D631A9 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F59C54B1BF9D8B900D631A9 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		1F59C54D1BF9D8B900D631A9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F59C54E1BF9D8B900D631A9 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		1FB7A2241BF6BB410047E823 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -451,6 +475,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "Alarm Pad Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.toggleable.Alarm-Pad.Alarm-Pad-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -462,6 +487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "Alarm Pad Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.toggleable.Alarm-Pad.Alarm-Pad-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";

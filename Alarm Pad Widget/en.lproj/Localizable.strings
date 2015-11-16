@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  Alarm Pad
+
+  Created by Travis Roman on 11/15/15.
+  Copyright © 2015 Travis Roman. All rights reserved.
+*/
+
+"arm" = "Arm";
+"disarm" = "Disarm";
+"delete" = "Delete";
+"checking" = "Checking...";
+"unknown" = "Unknown";
+"unarmed" = "Unarmed";
+"armed" = "Armed";
+"temporary disarm" = "Temporary Disarm";
+"intruder" = "Intruder";
+"disarming" = "Disarming...";
+"arming" = "Arming...";
+"arming in" = "Arming in %@ Seconds";
+"active" = "ACTIVE";
+"passive" = "passive";
+"opened securityspy" = "Opened SecuritySpy.";
+"invalid passcode" = "Invalid alarm code.";
+"ok" = "OK";
+
+"camera.living room" = "Living Room";
+"camera.kitchen" = "Kitchen";
+"camera.bedroom" = "Bedroom";
+"camera.facetime" = "Facetime";
+"camera.intruder detection" = "Intruder Detection";
+"camera.siren detection" = "Siren Detection";

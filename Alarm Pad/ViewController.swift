@@ -10,7 +10,7 @@ import UIKit
 
 extension NSURLRequest {
 	class func allowsAnyHTTPSCertificateForHost(host: String) -> Bool {
-		return true;
+		return host == "lion.toggleable.com:161";
 	}
 }
 
