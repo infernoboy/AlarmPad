@@ -54,14 +54,14 @@ public class AlarmController {
 				if (self.isArming) {
 					self.armCountdownSeconds -= 1;
 					
-					self.viewController.updateStatus("ARMING IN \(self.armCountdownSeconds) SECONDS", isDisarmed: false);
+					self.viewController.updateStatus("arming in".localizeWithData(String(self.armCountdownSeconds)), isDisarmed: false);
 					
 					if (self.armCountdownSeconds > 0) {
 						self.armCountdownTimeout?.reset();
 					} else if (self.armCountdownSeconds == 0) {
 						self.isArming = false;
 						
-						self.viewController.updateStatus("ARMED", isDisarmed: false);
+						self.viewController.updateStatus("armed".localized, isDisarmed: false);
 					}
 				} else {
 					self.fetchRemoteStatus();
@@ -77,18 +77,18 @@ public class AlarmController {
 				.responseJSON { response in
 					if (!self.isArming) {
 						if (response.result.error != nil) {
-								self.viewController.updateStatus("UNKNOWN", isDisarmed: true);
+								self.viewController.updateStatus("unknown".localized, isDisarmed: true);
 						} else {
 							let status = response.result.value!
 							
 							if (status["intruder"] as! NSInteger == 1) {
-								self.viewController.updateStatus("INTRUDER", isDisarmed: false);
+								self.viewController.updateStatus("intruder".localized, isDisarmed: false);
 							} else if (status["temporarilyDisarmed"] as! NSInteger == 1) {
-								self.viewController.updateStatus("TEMPORARY DISARM", isDisarmed: true);
+								self.viewController.updateStatus("temporary disarm".localized, isDisarmed: true);
 							} else if (status["armed"] as! NSInteger == 1) {
-								self.viewController.updateStatus("ARMED", isDisarmed: false);
+								self.viewController.updateStatus("armed".localized, isDisarmed: false);
 							} else {
-								self.viewController.updateStatus("UNARMED", isDisarmed: true);
+								self.viewController.updateStatus("unarmed".localized, isDisarmed: true);
 							}
 						}
 					}
@@ -101,24 +101,24 @@ public class AlarmController {
 	public func disarmWithPasscode(passcode: String) {
 		self.fetchRemoteStatusTimeout?.reset();
 		
-		self.viewController.updateStatus("DISARMING...", isDisarmed: nil);
+		self.viewController.updateStatus("disarming".localized, isDisarmed: nil);
 		
 		Alamofire
 			.request(.POST, self.alarmBaseURL + "disarm.php", parameters: ["passcode": passcode])
 			.responseString { response in
 				if (response.result.error != nil) {
-					self.viewController.updateStatus("UNKNOWN", isDisarmed: true);
+					self.viewController.updateStatus("unknown".localized, isDisarmed: true);
 					self.viewController.showInfo("Error: \(response.result.error!)");
 				} else {
 					switch response.result.value! {
 						case "2":
 							self.isArming = false;
 							
-							self.viewController.updateStatus("UNARMED", isDisarmed: true);
+							self.viewController.updateStatus("unarmed".localized, isDisarmed: true);
 						case "1":
 							self.isArming = false;
 							
-							self.viewController.updateStatus("TEMPORARY DISARM", isDisarmed: true);
+							self.viewController.updateStatus("temporary disarm".localized, isDisarmed: true);
 						default:
 							self.fetchRemoteStatus();
 							
@@ -131,13 +131,13 @@ public class AlarmController {
 	public func armWithPasscode(passcode: String) {
 		self.fetchRemoteStatusTimeout?.reset();
 		
-		self.viewController.updateStatus("ARMING...", isDisarmed: nil);
+		self.viewController.updateStatus("arming".localized, isDisarmed: nil);
 		
 		Alamofire
 			.request(.POST, self.alarmBaseURL + "arm.php", parameters: ["passcode": passcode])
 			.responseString { response in
 				if (response.result.error != nil) {
-					self.viewController.updateStatus("UNKNOWN", isDisarmed: true);
+					self.viewController.updateStatus("unknown".localized, isDisarmed: true);
 					self.viewController.showInfo("Error: \(response.result.error!)");
 				} else {
 					self.fetchRemoteStatus();
@@ -152,7 +152,7 @@ public class AlarmController {
 							
 							for (cameraID, cameraName) in self.knownCameras {
 								if (status?[cameraID] != nil) {
-									cameraStatus[cameraName] = (status?[cameraID] as! Bool) ? "ACTIVE" : "passive";
+									cameraStatus[cameraName] = (status?[cameraID] as! Bool) ? "active".localized : "passive".localized;
 								}
 							}
 							
@@ -164,11 +164,11 @@ public class AlarmController {
 					} else {
 						switch response.result.value! {
 							case "2":
-								self.viewController.showInfo("Opened SecuritySpy.");
+								self.viewController.showInfo("opened securityspy".localized);
 							case "1":
 								self.beginArmCountdown();
 							default:
-								self.viewController.showInfo("Invalid passcode.");
+								self.viewController.showInfo("invalid passcode".localized);
 						}
 					}
 				}

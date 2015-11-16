@@ -9,6 +9,50 @@
 import UIKit
 import Foundation
 
+extension UIView {
+	func slideInFromBottom(duration: NSTimeInterval = 1.0, completionDelegate: AnyObject? = nil) {
+		let slideInFromBottom = CATransition()
+		
+		if let delegate: AnyObject = completionDelegate {
+			slideInFromBottom.delegate = delegate;
+		}
+		
+		slideInFromBottom.type = kCATransitionPush;
+		slideInFromBottom.subtype = kCATransitionFromTop;
+		slideInFromBottom.duration = duration;
+		slideInFromBottom.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut);
+		slideInFromBottom.fillMode = kCAFillModeRemoved;
+		
+		self.layer.addAnimation(slideInFromBottom, forKey: "slideInFromBottomTransition")
+	}
+	
+	func slideOutFromBottom(duration: NSTimeInterval = 1.0, completionDelegate: AnyObject? = nil) {
+		let slideOutFromBottom = CATransition()
+				
+		if let delegate: AnyObject = completionDelegate {
+			slideOutFromBottom.delegate = delegate;
+		}
+		
+		slideOutFromBottom.type = kCATransition;
+		slideOutFromBottom.subtype = kCATransitionFromTop;
+		slideOutFromBottom.duration = duration;
+		slideOutFromBottom.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut);
+		slideOutFromBottom.fillMode = kCAFillModeRemoved;
+		
+		self.layer.addAnimation(slideOutFromBottom, forKey: "slideOutFromBottomTransition")
+	}
+}
+
+extension String {
+	var localized: String {
+		return NSLocalizedString(self, tableName: nil, bundle: NSBundle.mainBundle(), value: "", comment: "");
+	}
+	
+	func localizeWithData(data: String) -> String {
+		return String.localizedStringWithFormat(NSLocalizedString(self, tableName: nil, bundle: NSBundle.mainBundle(), value: "", comment: ""), data);
+	}
+}
+
 extension CALayer {
 	func borderUIColor() -> UIColor? {
 		return borderColor != nil ? UIColor(CGColor: borderColor!) : nil

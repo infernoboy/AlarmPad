@@ -49,7 +49,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 	
 	let defaults = NSUserDefaults.standardUserDefaults();
 	
-	let expandedHeight = CGFloat(297);
+	let expandedHeight = CGFloat(251);
 	let collapsedHeight = CGFloat(38);
 	let width = CGFloat(320);
 	
@@ -61,6 +61,10 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 		super.viewDidAppear(animated);
 		
 		self.alarmController.fetchRemoteStatus();
+	}
+	
+	override func viewDidDisappear(animated: Bool) {
+		super.viewDidDisappear(animated);
 	}
 
 	override func viewDidLoad() {
@@ -95,7 +99,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 			// If there's no update required, use NCUpdateResult.NoData
 			// If there's an update, use NCUpdateResult.NewData
 
-		completionHandler(NCUpdateResult.NewData)
+		completionHandler(.NewData);
 	}
 	
 	func collapse() {
@@ -131,7 +135,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 			self.alarmStatus.textColor = isDisarmed == true ? self.disarmButton.titleColorForState(.Normal) : self.armButton.titleColorForState(.Normal);
 		}
 		
-		if (status == "UNKNOWN") {
+		if (status == "unknown".localized) {
 			self.alarmStatus.textColor = UIColor.lightGrayColor();
 		}
 	}
@@ -183,20 +187,20 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 	func showInfo(info: String) {
 		self.infoText.text = info;
 		
-		UIView.animateWithDuration(0.25, delay: 0, options: .CurveEaseOut, animations: { () -> Void in
-			self.infoView.hidden = false;
-			self.infoView.alpha = 1;
-		}, completion: nil);
-	}
-	
-	@IBAction func refreshRemoteStatus(sender: AnyObject) {
-		self.alarmController.fetchRemoteStatus();
+		self.infoView.hidden = false;
+		
+		self.infoView.bounds.origin.y = -self.expandedHeight;
+		
+		UIView.animateWithDuration(0.25, animations: { () -> Void in
+			self.infoView.bounds.origin.y = 0;
+		});
 	}
 	
 	@IBAction func dismissInfoView(sender: AnyObject) {
-		UIView.animateWithDuration(0.25, delay: 0, options: .CurveEaseOut, animations: { () -> Void in
-			self.infoView.hidden = false;
-			self.infoView.alpha = 0;
+		self.infoText.text = "";
+		
+		UIView.animateWithDuration(0.25, animations: { () -> Void in
+			self.infoView.bounds.origin.y = -self.expandedHeight;
 		}, completion: { finished in
 			self.infoView.hidden = true;
 		});
