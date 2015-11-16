@@ -17,21 +17,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="330"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8a-ac-gsO" userLabel="Hide/Show">
-                                <rect key="frame" x="17" y="2" width="45" height="30"/>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8a-ac-gsO" userLabel="Hide/Show">
+                                <rect key="frame" x="17" y="-3" width="45" height="45"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="Aak-Z5-Bdv"/>
+                                    <constraint firstAttribute="height" constant="45" id="qk9-5H-l3D"/>
                                 </constraints>
                                 <state key="normal" title="▽">
-                                    <color key="titleColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="1" alpha="0.59999999999999998" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="toggleMainView:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="Rxw-nE-TlY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="checking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXo-2z-FDd" customClass="LocalizableUILabel" customModule="Alarm_Pad_Widget" customModuleProvider="target">
-                                <rect key="frame" x="16" y="8" width="288" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="checking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXo-2z-FDd" customClass="LocalizableUILabel" customModule="Alarm_Pad_Widget" customModuleProvider="target">
+                                <rect key="frame" x="16" y="8" width="288" height="22"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -40,30 +41,30 @@
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                             <stackView opaque="NO" tag="3" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OJG-tA-jqe" userLabel="Main">
-                                <rect key="frame" x="30" y="40" width="260" height="208"/>
+                                <rect key="frame" x="40" y="35" width="240" height="213"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ah7-Dd-vaf">
-                                        <rect key="frame" x="0.0" y="0.0" width="260" height="36"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="33"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00N-Sy-gwG" userLabel="Spacer">
-                                                <rect key="frame" x="0.0" y="0.0" width="87" height="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="32"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="20" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1nH-Z3-Xsp" userLabel="Passcode">
-                                                <rect key="frame" x="87" y="0.0" width="86" height="32"/>
+                                                <rect key="frame" x="80" y="0.0" width="80" height="32"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="32" id="XGw-dX-nxU"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHd-5i-xfP" customClass="LocalizableUIButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
-                                                <rect key="frame" x="173" y="0.0" width="87" height="32"/>
+                                                <rect key="frame" x="160" y="0.0" width="80" height="32"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <inset key="contentEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
@@ -86,13 +87,13 @@
                                             </button>
                                         </subviews>
                                         <animations/>
-                                        <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="4" right="0.0"/>
+                                        <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="1" right="0.0"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="k9d-6Q-qRq" userLabel="Keypad">
-                                        <rect key="frame" x="0.0" y="36" width="260" height="172"/>
+                                        <rect key="frame" x="0.0" y="33" width="240" height="180"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbG-bC-vFn" userLabel="Spacer">
-                                                <rect key="frame" x="0.0" y="0.0" width="260" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="0.0"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" id="fps-id-dCa"/>
@@ -102,13 +103,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bD9-ge-Ic6" userLabel="1-2-3">
-                                                <rect key="frame" x="0.0" y="3" width="260" height="40"/>
+                                                <rect key="frame" x="0.0" y="3" width="240" height="42"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="1lh-YU-iRe" userLabel="Numbers">
-                                                        <rect key="frame" x="0.0" y="0.0" width="260" height="40"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="42"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Buc-py-qcz" customClass="PadButton" customModule="Alarm_Pad_Widget">
-                                                                <rect key="frame" x="0.0" y="0.0" width="85" height="40"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="78" height="42"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="0.11328125" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -131,7 +132,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIJ-aE-nB2" customClass="PadButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
-                                                                <rect key="frame" x="88" y="0.0" width="84" height="40"/>
+                                                                <rect key="frame" x="81" y="0.0" width="78" height="42"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="0.11328125" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -157,7 +158,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t68-oI-mK3" customClass="PadButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
-                                                                <rect key="frame" x="175" y="0.0" width="85" height="40"/>
+                                                                <rect key="frame" x="162" y="0.0" width="78" height="42"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="0.11328125" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -185,28 +186,28 @@
                                                         </subviews>
                                                         <animations/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="40" id="WUq-bi-XHP"/>
+                                                            <constraint firstAttribute="height" constant="42" id="WUq-bi-XHP"/>
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="eZh-A4-vSM" userLabel="Letters">
-                                                        <rect key="frame" x="0.0" y="40" width="260" height="0.0"/>
+                                                        <rect key="frame" x="0.0" y="42" width="240" height="0.0"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" !@." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="or7-1d-T7f">
-                                                                <rect key="frame" x="0.0" y="-14" width="85" height="14"/>
+                                                                <rect key="frame" x="0.0" y="-16" width="78" height="16"/>
                                                                 <animations/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uib-6U-6oG">
-                                                                <rect key="frame" x="88" y="-14" width="84" height="14"/>
+                                                                <rect key="frame" x="81" y="-16" width="78" height="16"/>
                                                                 <animations/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M00-NO-jQ2">
-                                                                <rect key="frame" x="175" y="-14" width="85" height="14"/>
+                                                                <rect key="frame" x="162" y="-16" width="78" height="16"/>
                                                                 <animations/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -214,19 +215,19 @@
                                                             </label>
                                                         </subviews>
                                                         <animations/>
-                                                        <edgeInsets key="layoutMargins" top="-14" left="0.0" bottom="0.0" right="0.0"/>
+                                                        <edgeInsets key="layoutMargins" top="-16" left="0.0" bottom="0.0" right="0.0"/>
                                                     </stackView>
                                                 </subviews>
                                                 <animations/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2qc-b2-BSK" userLabel="4-5-6">
-                                                <rect key="frame" x="0.0" y="46" width="260" height="40"/>
+                                                <rect key="frame" x="0.0" y="48" width="240" height="42"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="rxM-n2-1eK" userLabel="Numbers">
-                                                        <rect key="frame" x="0.0" y="0.0" width="260" height="40"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="42"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngl-eZ-tdU" customClass="PadButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="85" height="40"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="78" height="42"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="0.11328125" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -252,7 +253,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FA8-n6-PVG" customClass="PadButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
-                                                                <rect key="frame" x="88" y="0.0" width="84" height="40"/>
+                                                                <rect key="frame" x="81" y="0.0" width="78" height="42"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="0.11328125" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -278,7 +279,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Xg-FV-eph" customClass="PadButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
-                                                                <rect key="frame" x="175" y="0.0" width="85" height="40"/>
+                                                                <rect key="frame" x="162" y="0.0" width="78" height="42"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="0.11328125" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -306,28 +307,28 @@
                                                         </subviews>
                                                         <animations/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="40" id="0BO-nx-as8"/>
+                                                            <constraint firstAttribute="height" constant="42" id="0BO-nx-as8"/>
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Hwe-al-rWU" userLabel="Letters">
-                                                        <rect key="frame" x="0.0" y="40" width="260" height="0.0"/>
+                                                        <rect key="frame" x="0.0" y="42" width="240" height="0.0"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GHI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1e-Eg-du5">
-                                                                <rect key="frame" x="0.0" y="-14" width="85" height="14"/>
+                                                                <rect key="frame" x="0.0" y="-16" width="78" height="16"/>
                                                                 <animations/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JKL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usM-Iv-aS8">
-                                                                <rect key="frame" x="88" y="-14" width="84" height="14"/>
+                                                                <rect key="frame" x="81" y="-16" width="78" height="16"/>
                                                                 <animations/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MNO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zey-ya-Kzt">
-                                                                <rect key="frame" x="175" y="-14" width="85" height="14"/>
+                                                                <rect key="frame" x="162" y="-16" width="78" height="16"/>
                                                                 <animations/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -335,19 +336,19 @@
                                                             </label>
                                                         </subviews>
                                                         <animations/>
-                                                        <edgeInsets key="layoutMargins" top="-14" left="0.0" bottom="0.0" right="0.0"/>
+                                                        <edgeInsets key="layoutMargins" top="-16" left="0.0" bottom="0.0" right="0.0"/>
                                                     </stackView>
                                                 </subviews>
                                                 <animations/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ukw-hx-A5Q" userLabel="7-8-9">
-                                                <rect key="frame" x="0.0" y="89" width="260" height="40"/>
+                                                <rect key="frame" x="0.0" y="93" width="240" height="42"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="UDx-CC-41s" userLabel="Numbers">
-                                                        <rect key="frame" x="0.0" y="0.0" width="260" height="40"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="42"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuB-l9-71X" customClass="PadButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="85" height="40"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="78" height="42"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="0.11328125" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -373,7 +374,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmU-kZ-Zy7" customClass="PadButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
-                                                                <rect key="frame" x="88" y="0.0" width="84" height="40"/>
+                                                                <rect key="frame" x="81" y="0.0" width="78" height="42"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="0.11328125" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -399,7 +400,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puL-IU-Rl4" customClass="PadButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
-                                                                <rect key="frame" x="175" y="0.0" width="85" height="40"/>
+                                                                <rect key="frame" x="162" y="0.0" width="78" height="42"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="0.11328125" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -427,28 +428,28 @@
                                                         </subviews>
                                                         <animations/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="40" id="MHn-rs-3bp"/>
+                                                            <constraint firstAttribute="height" constant="42" id="MHn-rs-3bp"/>
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Xu0-ms-hgv" userLabel="Letters">
-                                                        <rect key="frame" x="0.0" y="40" width="260" height="0.0"/>
+                                                        <rect key="frame" x="0.0" y="42" width="240" height="0.0"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PQRS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhd-6G-6iZ">
-                                                                <rect key="frame" x="0.0" y="-14" width="85" height="14"/>
+                                                                <rect key="frame" x="0.0" y="-16" width="78" height="16"/>
                                                                 <animations/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TUV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yku-TE-VRb">
-                                                                <rect key="frame" x="88" y="-14" width="84" height="14"/>
+                                                                <rect key="frame" x="81" y="-16" width="78" height="16"/>
                                                                 <animations/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WXYZ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rnl-st-07N">
-                                                                <rect key="frame" x="175" y="-14" width="85" height="14"/>
+                                                                <rect key="frame" x="162" y="-16" width="78" height="16"/>
                                                                 <animations/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -456,19 +457,19 @@
                                                             </label>
                                                         </subviews>
                                                         <animations/>
-                                                        <edgeInsets key="layoutMargins" top="-14" left="0.0" bottom="0.0" right="0.0"/>
+                                                        <edgeInsets key="layoutMargins" top="-16" left="0.0" bottom="0.0" right="0.0"/>
                                                     </stackView>
                                                 </subviews>
                                                 <animations/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GGE-r4-fhe" userLabel="Arm-0-Delete">
-                                                <rect key="frame" x="0.0" y="132" width="260" height="40"/>
+                                                <rect key="frame" x="0.0" y="138" width="240" height="42"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="DGd-Xe-uRd" userLabel="Numbers">
-                                                        <rect key="frame" x="0.0" y="0.0" width="260" height="40"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="42"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTM-vC-qDz" customClass="LocalizableUIButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="85" height="40"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="78" height="42"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.01" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -488,7 +489,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Trm-no-Xw0" customClass="PadButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
-                                                                <rect key="frame" x="88" y="0.0" width="84" height="40"/>
+                                                                <rect key="frame" x="81" y="0.0" width="78" height="42"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="0.11328125" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -513,7 +514,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iui-LE-ept" customClass="LocalizableUIButton" customModule="Alarm_Pad_Widget" customModuleProvider="target">
-                                                                <rect key="frame" x="175" y="0.0" width="85" height="40"/>
+                                                                <rect key="frame" x="162" y="0.0" width="78" height="42"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.01" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -534,7 +535,7 @@
                                                         </subviews>
                                                         <animations/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="40" id="xMe-NI-eau"/>
+                                                            <constraint firstAttribute="height" constant="42" id="xMe-NI-eau"/>
                                                         </constraints>
                                                     </stackView>
                                                 </subviews>
@@ -546,7 +547,7 @@
                                 </subviews>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="260" id="Fbt-8e-raa"/>
+                                    <constraint firstAttribute="width" constant="240" id="Fbt-8e-raa"/>
                                 </constraints>
                             </stackView>
                             <visualEffectView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xJt-RI-2hQ">
@@ -601,8 +602,8 @@
                         <animations/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="xJt-RI-2hQ" secondAttribute="trailing" id="8AX-61-8an"/>
-                            <constraint firstItem="OJG-tA-jqe" firstAttribute="top" secondItem="I8a-ac-gsO" secondAttribute="bottom" constant="8" id="EDd-UG-ORN"/>
-                            <constraint firstItem="I8a-ac-gsO" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="2" id="FJZ-XK-a2b"/>
+                            <constraint firstItem="OJG-tA-jqe" firstAttribute="top" secondItem="I8a-ac-gsO" secondAttribute="bottom" constant="-7" id="EDd-UG-ORN"/>
+                            <constraint firstItem="I8a-ac-gsO" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="-3" id="FJZ-XK-a2b"/>
                             <constraint firstItem="QXo-2z-FDd" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="FTk-Ee-rQV"/>
                             <constraint firstItem="xJt-RI-2hQ" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" id="Nsx-uL-Ebz"/>
                             <constraint firstItem="OJG-tA-jqe" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" priority="750" id="Qs4-kT-UDe"/>

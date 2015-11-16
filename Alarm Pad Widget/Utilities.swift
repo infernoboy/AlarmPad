@@ -9,6 +9,10 @@
 import UIKit
 import Foundation
 
+func DEGREES_TO_RADIANS(x: Double) -> Double {
+ return (M_PI * (x) / 180.0);
+}
+
 extension String {
 	var localized: String {
 		return NSLocalizedString(self, comment: "");

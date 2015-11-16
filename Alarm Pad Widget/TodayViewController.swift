@@ -105,13 +105,13 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 	func collapse() {
 		self.preferredContentSize = CGSizeMake(self.width, self.collapsedHeight);
 		
-		self.toggleButton.setTitle("▷", forState: .Normal);
+		self.toggleButton.transform = CGAffineTransformMakeRotation(CGFloat(DEGREES_TO_RADIANS(-90)));
 	}
 	
 	func expand() {
 		self.preferredContentSize = CGSizeMake(self.width, self.expandedHeight);
 		
-		self.toggleButton.setTitle("▽", forState: .Normal);
+		self.toggleButton.transform = CGAffineTransformMakeRotation(0);
 	}
 	
 	func updatePasscode(passcode: String) {
@@ -122,7 +122,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 			
 			self.passcodeInput.textColor = UIColor.whiteColor();
 		}	else {
-			self.passcodeInput.text = String(count: 8, repeatedValue: Character("◦"));
+			self.passcodeInput.text = String(count: self.alarmController.maxPasscodeLength, repeatedValue: Character("◦"));
 			
 			self.passcodeInput.textColor = UIColor.whiteColor().colorWithAlphaComponent(0.1);
 		}
@@ -151,7 +151,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 	}
 	
 	@IBAction func padNumberPressed(sender: AnyObject) {
-		if (self.passcode.characters.count < 8) {
+		if (self.passcode.characters.count < self.alarmController.maxPasscodeLength) {
 			let padValue = sender.valueForKeyPath("padValue") as! String
 			
 			self.updatePasscode("\(self.passcode)\(padValue)");

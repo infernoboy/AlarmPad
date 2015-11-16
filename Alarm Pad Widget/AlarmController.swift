@@ -19,6 +19,8 @@ extension NSURLRequest {
 public class AlarmController {
 	let alarmBaseURL = "https://lion.toggleable.com:161/alarm/";
 	
+	let maxPasscodeLength = 7;
+	
 	let knownCameras: [String:String] = [
 		"5": "camera.living room".localized,
 		"6": "camera.kitchen".localized,
